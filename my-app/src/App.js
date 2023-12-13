@@ -5,6 +5,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const fnc = () => {
+    toast("tıklandı");
+  };
   return (
     <>
       <div className="App">
@@ -24,7 +27,10 @@ function App() {
           </a>
         </header>
       </div>
-      
+      <button type="submit" onClick={fnc}>
+        tıkla
+      </button>
+      <ToastContainer />
     </>
   );
 }
