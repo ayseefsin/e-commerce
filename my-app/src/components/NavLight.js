@@ -1,6 +1,6 @@
 export const NavLight = () => {
   return (
-    <div className="flex bg-[#FFF] font-navText gap-[30vw] ">
+    <div className="flex bg-[#FFF] font-navText justify-between items-center ">
       <div className="flex items-center text-2xl font-bold text-[#252B42] h-[3.625rem] py-[0.813rem] pl-[1.063rem] pr-[2.375rem] tracking-[.00625em] ">
         <h3>Bandage</h3>
         <div className="flex gap-[0.938rem] h-[3.625rem] justify-center items-center pl-10 py-0.5 text-[#737373] text-[0.875rem] font-bold font-navText tracking-[.0125em]">
