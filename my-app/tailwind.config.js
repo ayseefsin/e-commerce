@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         navText: ["Montserrat"],
       },
+      colors: {
+        "main-blue": "#23A6F0",
+      },
     },
   },
   plugins: [],
