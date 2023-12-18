@@ -1,6 +1,6 @@
 export const Carousel = () => {
   return (
-    <div className="bg-cover items-center flex flex-shrink-0 max-w-full min-h-full bg-[url(https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1703462400&Signature=X6f3AmUksf4DpTF7ZzZlYDt-FR-~j6-f8tFZNo0JR6FHzFJ7eoCfkTftLkU8FdMJpFVfQN-tj6vSQcmgnkcyyO9xYBNYrXBTmVZhH-WthlMYNxRNvsfuCV0aMAPL~xvL-J0okIAxTLuTph2LPw-4NTQz6qHVey3AvH51ldwyXgrpKDWCxNqFPKdgk-heAavzO8hr311BXASZNMOWBMH4EhMMDLNUpnst8gvFXyQ3aIlq1h0YgXZY1POtJhRUTt4FWwLwJwv~NgKEo7NrpWY6Z4Ymb~qigzvdnsHnrfr2Qk9aGmVj~-JOT6UK4dQOheB9QdPa4-8biyczJ59Hra2VOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)]">
+    <div className="bg-cover items-center flex flex-shrink-0 bg-[url(https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1703462400&Signature=X6f3AmUksf4DpTF7ZzZlYDt-FR-~j6-f8tFZNo0JR6FHzFJ7eoCfkTftLkU8FdMJpFVfQN-tj6vSQcmgnkcyyO9xYBNYrXBTmVZhH-WthlMYNxRNvsfuCV0aMAPL~xvL-J0okIAxTLuTph2LPw-4NTQz6qHVey3AvH51ldwyXgrpKDWCxNqFPKdgk-heAavzO8hr311BXASZNMOWBMH4EhMMDLNUpnst8gvFXyQ3aIlq1h0YgXZY1POtJhRUTt4FWwLwJwv~NgKEo7NrpWY6Z4Ymb~qigzvdnsHnrfr2Qk9aGmVj~-JOT6UK4dQOheB9QdPa4-8biyczJ59Hra2VOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)]">
       <div className="p-6 flex justify-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export const Carousel = () => {
         </div>
         <div className="flex items-center"></div>
       </div>
-      <div className="w-[20rem]">boşluk</div>
+      <div className="w-[20rem]"></div>
       <div>
         <div className="flex items-center pl-[5rem] ">
           <svg

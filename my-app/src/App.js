@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Header } from "./components/Header";
+import { EditorsPick } from "./components/EditorsPick";
 
 function App() {
   const fnc = () => {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <EditorsPick />
       <ToastContainer />
     </>
   );
