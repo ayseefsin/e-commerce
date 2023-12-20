@@ -48,14 +48,14 @@ export const Carousel2 = () => {
           <div>
             <h4 className="text-2xl">$16.48</h4>
           </div>
-          <div className="bg-[#2DC071] ">
+          <div className="flex bg-[#2DC071] rounded-md ">
             <button className="text-sm font-bold px-[3vw] py-[2vh] ">
               ADD TO CART
             </button>
           </div>
         </div>
       </div>
-      <div className="w-[30vw] ">
+      <div className="w-[30vw] py-[10vh] overflow-hidden h-[85vh] ">
         <img src="https://s3-alpha-sig.figma.com/img/c7a1/9f43/aa4437b65bb40c3e3edb92e61a4d6184?Expires=1704067200&Signature=IMijjbT4srtiiJSOgk9xzPywkJr0441vFbUNyEM9mgOVemCqRwOUZ65K-oxAR-SK7D5LbBHaeZLtZL61uQxfxf34SOlP8PEp~tyQvhoZEloDJRuL4ccgl37QzYVo5HBF0vBn6aRRmtg2Fp0DHvsTqxb9NBsHBsWWEwveGQKGkVigknTIJupItUbpOZ00fpqghiBbNDW468IukUVVUccBSRC1FztofG7H7JE-3o~HLGeMCQ7wcEkXwb~MGJ2-tfZURlI~5qGKejrwJOk8J40rwcA06~biLJnJcgQIpc2yDu4eNKoDTTg3xfKzqibbKQmmwOj0FZjpz5CeSFl06Sm4pg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
       </div>
       <div className="flex items-center">
