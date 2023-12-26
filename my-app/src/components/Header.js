@@ -5,7 +5,7 @@ export const Header = ()=>{
   return(
     <div>
       <Navbar/>
-      <Carousel/>
+      
     </div>
   )
 }

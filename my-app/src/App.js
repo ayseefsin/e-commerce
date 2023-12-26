@@ -7,6 +7,8 @@ import axios from "axios";
 import { Header } from "./components/Header";
 import { EditorsPick } from "./components/EditorsPick";
 import { HomePage } from "./page-components/HomePage";
+import { Route, Routes } from "react-router-dom";
+import { ProductListPage } from "./page-components/ProductListPage";
 
 function App() {
   const fnc = () => {
@@ -15,7 +17,12 @@ function App() {
 
   return (
     <>
-      <HomePage />
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ProductListPage />} />
+      </Routes>
+
       <ToastContainer />
     </>
   );

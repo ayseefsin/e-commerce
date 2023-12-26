@@ -1,5 +1,6 @@
 import { BestSeller } from "../components/BestSeller";
 import { Brand } from "../components/Brand";
+import { Carousel } from "../components/Carousel";
 import { Carousel2 } from "../components/Carousel2";
 import { ContainerFluid } from "../components/ContainerFluid";
 import { EditorsPick } from "../components/EditorsPick";
@@ -11,7 +12,7 @@ import { Header } from "../components/Header";
 export const HomePage = () => {
   return (
     <div>
-      <Header />
+      <Carousel />
       <EditorsPick />
       <BestSeller />
       <Carousel2 />
