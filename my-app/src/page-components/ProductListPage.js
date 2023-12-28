@@ -1,4 +1,5 @@
 import { CategoryContainer } from "../components/CategoryContainer";
+import { ContainerFilter } from "../components/ContainerFilter";
 import { ProductListPageNav } from "../components/ProductListPageNav";
 
 export const ProductListPage = () => {
@@ -6,6 +7,7 @@ export const ProductListPage = () => {
     <div>
       <ProductListPageNav />
       <CategoryContainer />
+      <ContainerFilter />
     </div>
   );
 };
