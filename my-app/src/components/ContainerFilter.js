@@ -1,12 +1,16 @@
+import React from "react";
+
+import { Filter } from "./Filter";
+
 export const ContainerFilter = () => {
   return (
-    <div className="font-navText ">
+    <div className="flex justify-between items-center p-[3vw] font-navText ">
       <div>
         <h6 className="text-[#737373] font-bold text-sm">
           Showing all 12 results
         </h6>
       </div>
-      <div className="flex gap-[3vw]">
+      <div className="flex justify-center items-center gap-[3vw]">
         <h6>Views:</h6>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +39,9 @@ export const ContainerFilter = () => {
           />
         </svg>
       </div>
-      <div></div>
+      <div >
+        <Filter />
+      </div>
     </div>
   );
 };
