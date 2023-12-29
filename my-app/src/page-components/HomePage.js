@@ -18,9 +18,7 @@ export const HomePage = () => {
       <Carousel2 />
       <ContainerFluid />
       <FeaturedPosts />
-      <Brand />
-      <Footer />
-      <FooterEnd />
+      
     </div>
   );
 };

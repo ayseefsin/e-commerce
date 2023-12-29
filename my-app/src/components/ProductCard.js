@@ -8,7 +8,7 @@ export const ProductCard = () => {
             src="https://www.figma.com/file/tXhNJv706AWM0lXlyxLH9l/image/23057910d190d178c2a7b276e896b9d38b982bf6"
           />
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col gap-2 ">
           <div className="flex justify-center">
             <h5 className="text-[#252B42] ">Graphic Design</h5>
           </div>

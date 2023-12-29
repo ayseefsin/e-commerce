@@ -9,6 +9,9 @@ import { EditorsPick } from "./components/EditorsPick";
 import { HomePage } from "./page-components/HomePage";
 import { Route, Routes } from "react-router-dom";
 import { ProductListPage } from "./page-components/ProductListPage";
+import { Footer } from "./components/Footer";
+import { FooterEnd } from "./components/FooterEnd";
+import { Brand } from "./components/Brand";
 
 function App() {
   const fnc = () => {
@@ -22,7 +25,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductListPage />} />
       </Routes>
-
+      <Brand />
+      <Footer />
+      <FooterEnd />
       <ToastContainer />
     </>
   );
