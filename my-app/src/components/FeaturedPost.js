@@ -1,7 +1,7 @@
 export const FeaturedPost = () => {
   return (
     <div className="flex flex-col gap-3 shadow-md hover:shadow-xl  ">
-      <div className="flex w-auto h-[50vh]  bg-[url(https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1704067200&Signature=qE6f9sZpnftqahqy03PwDX3yMOIbBa2X7vS7bPsuLxWKP9Um1aWrwI1YF7lawXYMBCFAfsVlDslx0t6iCuI7uz36Z-IF6RAfyj-sNihYEwQssxuSbzRJl9s574LVZwNMdWh5J0htT~ZUbm6s3hucRYCZ0kelrnDrG~fClo7ysyeyjYNKorMh8Pux6ektqvPLpYw5fKZu5hcx4Nea7AqUV3q3BduysBMDb5tSa7ZLdFhj6VVPJtWi5qJBYAjtTP5oSAXxMx8HIneJIj0-30uoNYvYN3UkDjCSloaJko8WP4nkWT9fpCPlKGJinzvzyMkJRVP0IL60magsrHA8ST~q8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)] ">
+      <div className="flex w-auto h-[50vh]  bg-[url(https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f823cFT7Xd1jeKsTWpcBDcq8N2J6rn5XAwuyaVXBQeTzVPoq76~7k6pm4Whm2xSHzO3xgEzZ8LBmqr71NIelxm~eje63XAPZbmdw0X~bqbrLoxnHb~35XgvNdXdSHkfWH2UUqICDIdgCBJtWdmrOLs0l8P-abGrgnYwLnqvqgsJV-RIBKosXpORYYRKct8m~coh9MfgGBWUE1jzcjp5Km1EPmduJH3~C3273gTpITiEGpNCfKF2IATK3HvnMYKHb0g5URt7JJFWQlQXDo7kMMvM2d--zVjjtZTwKh36NWQNmryZ7wn8HbpkmFORErBt6tV4jfGzhlYF63SX1FxwDyw__)] ">
         <div className="px-[2vw] py-[1vw]  ">
           <p className="text-[#FFFFFF] w-[7vw] px-[2vw] py-[0.5vw] text-sm font-bold bg-[#E74040] ">
             NEW

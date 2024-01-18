@@ -1,7 +1,7 @@
 export const categorySource = [
   {
     category: "MEN",
-    url: "https://s3-alpha-sig.figma.com/img/9da5/ab42/c0357746eb27e42fff6279478e2c8a48?Expires=1703462400&Signature=QNKdTbNX6JYJOo25Y2HEz~8CkTD~bM~NWVyWQgTbxiGWj9rv-vVJwuaYl25adhnLvGx-BdeBGIMhS6~Tt88gz5hBkIpoxRE9ftUuoYo547MJj4XEbu0Phi9L8rl6Kl2zajlzwMqTkTh22r7b3Rcs04~dyl-s2y~IASNdkK4S3xpmcLNgdMbTquUAR-5xvGKwahY86U71EKBiZNBlStGGqcesObNGWqDD6mDlgLDUhJH0cWwwycLnF-aMCyAwomNGgxIl7-tlDz8bekhqhYzscJ50ZQ1fQfeO~OnkBMixWiBTxO0gFt5MxusHaRtUN1RpO5VrXCaChECiZDh3aTk8lg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    url: "https://s3-alpha-sig.figma.com/img/9da5/ab42/c0357746eb27e42fff6279478e2c8a48?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gzvivBooEZRE3RcCY-zHf6BD1ds~XZrMur036JDiteKCFpxYGSKUC8A2bj~WKL~Jo8Az3y3bzTGafJPJS-NhqtCHvhJcnkxrEVE90P-nQaicVZLoA0W73BejV2COlWvuPp5qWMsRe~g3gsIgrcDW-AK9Hgd6AONfT3yr~3IdVqeYfUO22xsBJcpsKsrnxz4lsO0VdmQo0DV~CvlwmExptwnOh71scwHxSmY6mlEv86yLl7Z92tt3eTpnSJiadkmRsoibdcFuQRbkKMqGxrECP2SDSQIaoVp6lwV812~aqEIDD6BeupQWgCvR~RZ~65Kn0mv3kjiI-GfCt9I2bxpx7w__s",
   },
   {
     category: "WOMEN",

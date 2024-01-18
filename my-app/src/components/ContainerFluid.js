@@ -2,7 +2,7 @@ export const ContainerFluid = () => {
   return (
     <div className="grid grid-cols-2  font-navText gap-[3rem] ">
       <div className="w-[60vw] max-w-none">
-        <img src="https://s3-alpha-sig.figma.com/img/5f8c/e73d/1a41b674cbd12f927c7ea9a6ca0ce76c?Expires=1704067200&Signature=F30uV5SiUdT1SJbd7QnylK83Ar5R5Kq5pSku7u6NsvPpeThpSuCel7W4IAmLU6Cezau~~SiMp9-PYcwdnewWVKuumiGhLqvfm0ibc7uk6OlUb2SB8vQJ6JDQhj8m7ZlUzff6-1JKX2le6kA1QR4To7tcbQ~eB3jd0-OaPezVdSJ44auzJF7RvDqd2nrkfgBM8qoyR4fCVj6l9FMU0~KYe~nQMDuP95y3WKKZk0nkPZsaLyZ-UppMxcxDcAA3UAb35VVBQvwE8oVVUEwDvhAU43KjEG7Bk2kVIW8ZJVOTgvrhnMzMZlpvmaz96MWrxkitrrNsDmfEqysXMecBVesI3A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+        <img src="https://s3-alpha-sig.figma.com/img/5f8c/e73d/1a41b674cbd12f927c7ea9a6ca0ce76c?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JQ9KNvO~K3ydNrrWp~bUlS5WKgUkBfRq3YwEu0ytKqRYfL9zPU-3tBL0mp4XlZaiqz9lv~W0cMDQ-X3V6Kt5vd~ncmYsKdVmj2igjCHiZhygeLSMRtokopc0eXEplHj7FOVAykIfmuyurv4T1sjFKi2LBGW7p3co3oPmLgXop2~MLK8Q-MQ8v1~5mnEkvCa5h6duGqS9vXPZu3vv1ISqALlO4G0x26zCTXmJyjPfCALHGGeu06Dsl5mPvftjd2ZJIMv5Fx83Wt~dc2RPd-k5T7HuqwmFlwTTOfkDVfNTLgGKSutqQw~RYmptwSBG8sVFtduYM93IK4NVWWqPBqgIDA__" />
       </div>
 
       <div className="flex flex-col gap-[4vh] py-[10rem] px-[5rem] ">
