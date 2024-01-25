@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "tailwindcss": "^3.3.6"
-  },
-  "dependencies": {
-    "react-toastify": "^9.1.3"
-  }
-}

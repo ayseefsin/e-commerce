@@ -19,7 +19,7 @@ export const Carousel = () => {
       style={{ backgroundImage: `url(${slides[slide].url})` }}
       className="bg-cover items-center flex flex-shrink-0 duration-700"
     >
-      <div onClick={sliderFnc} className="p-6 flex justify-items-center">
+      <div onClick={sliderFnc} className="p-[6vw] flex justify-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -47,8 +47,8 @@ export const Carousel = () => {
           </defs>
         </svg>
       </div>
-      <div className="flex px-[9rem] justify-between ">
-        <div className="py-[112px] flex flex-col w-[599px] justify-items-start gap-[35px] font-navText text-[#FFF]">
+      <div className="flex px-[0.65vw] justify-between bg-[/pics/shop-hero-1-product-slide-1.jpg] ">
+        <div className="py-[8vw] flex flex-col w-[599px] justify-items-start gap-[35px] font-navText text-[#FFF]">
           <div>
             <h5 className="text-base font-bold h-[1.5rem] tracking-[.00625em]">
               SUMMER 2020
@@ -71,9 +71,9 @@ export const Carousel = () => {
           </div>
         </div>
       </div>
-      <div className="w-[20rem]"></div>
+      <div className="w-[20vw]"></div>
       <div>
-        <div onClick={sliderFnc} className="flex items-center pl-[5rem] ">
+        <div onClick={sliderFnc} className="flex items-center pl-[5vw] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

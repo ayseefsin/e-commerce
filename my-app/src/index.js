@@ -1,17 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
-import {
-  AxiosProvider,
-  Request,
-  Get,
-  Delete,
-  Head,
-  Post,
-  Put,
-  Patch,
-  withAxios,
-} from "react-axios";
+
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
