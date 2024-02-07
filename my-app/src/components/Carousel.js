@@ -6,11 +6,11 @@ export const Carousel = () => {
       name: "women",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TTYmJ9Fyii6mC~dcIbck2q4MkPrtR3-gV0HRdOL6Tyg6Jidov5F~AlG9KKkmo-9fuoU5dhR11R75-0Yc7ZRNdxhluorphg8LfehYS2UEMvGJqzvOO-CVMFy4ED5kE8HBMptNmqpCXzrlD72jLbYOEHH2bdSRxPjz-0JQ6hheSGoW66sZy4f54JWMvLovjuDNUcfVXTe6tCzne3xAPJWfvbpl8Y-8NN6v7HwcI6dakApbrXDdsPEU0jp7OQV48C3VMBHMw8YFBeADnA0F-Tfd~ilnLqmK62Gs~fpASKlRXkJ~t6s24XZBMHiaeoxuSbKyjJol7qc~eDEygOCep8ARIA__",
+      url: "https://wallpapercave.com/wp/wp1866317.jpg",
       name: "women",
     },
   ];
-  const [slide, setSlide] = useState(1);
+  const [slide, setSlide] = useState(0);
   const sliderFnc = () => {
     slide === 1 ? setSlide(0) : setSlide(1);
   };
