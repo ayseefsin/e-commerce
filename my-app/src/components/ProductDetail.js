@@ -1,6 +1,6 @@
 export const ProductDetail = () => {
   return (
-    <div className="font-navText  text-[#252B42]">
+    <div className="font-navText bg-[#FAFAFA] text-[#252B42]">
       <div>
         <div className="flex items-center gap-3 tracking-[.0125em] px-[6vw] py-[2vw] ">
           <a className="font-bold ">Home</a>
