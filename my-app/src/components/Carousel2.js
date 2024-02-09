@@ -56,7 +56,7 @@ export const Carousel2 = () => {
         </div>
       </div>
       <div className="w-[30vw] py-[10vh] overflow-hidden h-[85vh] ">
-        <img src="https://s3-alpha-sig.figma.com/img/c7a1/9f43/aa4437b65bb40c3e3edb92e61a4d6184?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JSqZHo06I6C-MifTClTHbm-rQQMjlxfyWWOzJuM5hwifWfxjRnHX7vRAJPx28gaqEOF~kicDyvD3QMo8Tn2SfL3tzaHwFm4k7EkWz5O6J6af6jnDnIacSGFdp9J2GreL7AvQ905I1wRr3TZelnsifg1ugk2yjwKP61Au8ZrFjYMSuMnQX-7bzDizz-32Vg6D9bLUhGRkg68eUeOcInsti3odH7Rq-oGLRbpB5ghliI09fPOoH4Edy8-qXuhK0APv9oZjYwvlytDkACcoo1mE-tHDq3vJiNAlBhyaOGgk-Pu0XKNqdjUW8Z4HzeR9PuTof-ZGjP1c5NSZmScazfRagw__" />
+        <img src="/pics/shop-hero-2-png-picture-1.png" />
       </div>
       <div className="flex items-center">
         <svg

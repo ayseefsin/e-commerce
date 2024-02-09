@@ -14,6 +14,7 @@ import { FooterEnd } from "./components/FooterEnd";
 import { Brand } from "./components/Brand";
 import { ProductPage } from "./page-components/ProductPage";
 import { AboutPage } from "./page-components/AboutPage";
+import { TeamPage } from "./page-components/TeamPage";
 
 function App() {
   const fnc = () => {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/products" element={<ProductListPage />} />
         <Route path="/products/detail" element={<ProductPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/team" element={<TeamPage />} />
       </Routes>
       <Brand />
       <Footer />

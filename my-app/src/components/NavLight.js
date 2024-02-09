@@ -30,7 +30,7 @@ export const NavLight = () => {
             <Link to="/about">About</Link>
           </div>
           <div>
-            <a>Blog</a>
+            <Link to="/team">Team</Link>
           </div>
           <div>
             <a>Contact</a>
