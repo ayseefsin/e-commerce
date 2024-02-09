@@ -1,7 +1,10 @@
+import { MeetOurTeam } from "../components/MeetOurTeam";
+import { Trial } from "../components/Trial";
+
 export const TeamPage = () => {
   return (
-    <>
-      <div className="flex flex-col items-center gap-[3vw]">
+    <div className="font-navText text-[#252B42]">
+      <div className="flex flex-col items-center gap-[3vw] mb-[6vw] ">
         <h5 className="text-lg font-bold ">WHAT WE DO</h5>
         <h2 className="text-6xl font-bold">Innovation tailored for you</h2>
         <div className="flex items-center gap-[1vw]">
@@ -10,25 +13,29 @@ export const TeamPage = () => {
           <h6>Team</h6>
         </div>
       </div>
-      <div className="flex">
+
+      <div className="flex gap-0 ">
         <div className="flex-1">
-          <img src="/pics/shop-hero-2-png-picture-1.png" />
+          <img src="/pics/redwoman.png" />
         </div>
-        <div className="grid grid-cols-2 flex-1">
+        <div className="grid grid-cols-2 flex-1 gap-[.6vw]">
           <div>
-            <img src="/pics/pembeSandalye.png" />
+            <img src="/pics/team2white.png" />
           </div>
           <div>
-            <img src="/pics/pembeSandalye.png" />
+            <img src="/pics/teamjean.png" />
           </div>
           <div>
-            <img src="/pics/pembeSandalye.png" />
+            <img src="/pics/blackwhite.png" />
           </div>
           <div>
-            <img src="/pics/pembeSandalye.png" />
+            <img src="/pics/blonde.png" />
           </div>
         </div>
       </div>
-    </>
+
+      <MeetOurTeam />
+      <Trial />
+    </div>
   );
 };
