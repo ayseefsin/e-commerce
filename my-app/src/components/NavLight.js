@@ -10,7 +10,9 @@ export const NavLight = () => {
             <Link to="/">Home</Link>
           </div>
           <div className="flex items-center">
-            <Link to="/products" className="font-medium text-[#252B42]">Shop</Link>
+            <Link to="/products" className="font-medium text-[#252B42]">
+              Shop
+            </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="10"
@@ -25,7 +27,7 @@ export const NavLight = () => {
             </svg>
           </div>
           <div>
-            <a>About</a>
+            <Link to="/about">About</Link>
           </div>
           <div>
             <a>Blog</a>

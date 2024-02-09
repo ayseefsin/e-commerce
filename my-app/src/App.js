@@ -13,11 +13,12 @@ import { Footer } from "./components/Footer";
 import { FooterEnd } from "./components/FooterEnd";
 import { Brand } from "./components/Brand";
 import { ProductPage } from "./page-components/ProductPage";
+import { AboutPage } from "./page-components/AboutPage";
 
 function App() {
   const fnc = () => {
     toast("tıklandı");
-  };  
+  };
 
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductListPage />} />
         <Route path="/products/detail" element={<ProductPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Brand />
       <Footer />
