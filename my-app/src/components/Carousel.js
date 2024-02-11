@@ -20,7 +20,10 @@ export const Carousel = () => {
       className="bg-cover items-center flex flex-shrink-0 duration-700"
     >
       <div onClick={sliderFnc} className="p-[6vw] flex justify-items-center">
-        <i class="fa-solid fa-chevron-left fa-2xl"></i>
+        <i
+          class="fa-solid fa-chevron-left fa-2xl"
+          style={{ color: "#ffffff" }}
+        ></i>
       </div>
       <div className="flex px-[0.65vw] justify-between bg-[/pics/shop-hero-1-product-slide-1.jpg] ">
         <div className="py-[8vw] flex flex-col w-[35vw] justify-items-start gap-[35px] font-navText text-[#FFF]">
@@ -49,7 +52,10 @@ export const Carousel = () => {
       <div className="w-[20vw]"></div>
       <div>
         <div onClick={sliderFnc} className="flex items-center pl-[5vw] ">
-          <i class="fa-solid fa-chevron-right fa-2xl"></i>
+          <i
+            class="fa-solid fa-chevron-right fa-2xl"
+            style={{ color: "#ffffff" }}
+          ></i>
         </div>
       </div>
     </div>
