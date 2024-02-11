@@ -1,8 +1,8 @@
 export const NavDark = () => {
   return (
     <div className="bg-[#252B42] text-[#FFFFFF] text-sm justify-between items-center font-bold font-navText flex h-[3.625rem] px-6 ">
-      <div className="flex gap-[0.313rem items-center]">
-        <div className="flex p-6 gap-[0.313rem]">
+      <div className="flex gap-[2vw] items-center">
+        <div className="flex p-6 gap-[2vw]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -29,7 +29,7 @@ export const NavDark = () => {
           </svg>
           <h6>(225) 555-0118</h6>
         </div>
-        <div className="flex p-6 gap-[0.313rem]">
+        <div className="flex p-6 gap-[2vw]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -57,10 +57,10 @@ export const NavDark = () => {
           <h6 className="h-4">michelle.rivera@example.com</h6>
         </div>
       </div>
-      <div className="flex p-6 gap-[0.313rem]">
+      <div className="flex p-6 gap-[2vw]">
         <h6>Follow Us and get a chance to win 80% off</h6>
       </div>
-      <div className="flex p-6 gap-[0.313rem]">
+      <div className="flex p-6 gap-[2vw]">
         <h6>Follow Us :</h6>
         <svg
           xmlns="http://www.w3.org/2000/svg"
