@@ -20,7 +20,7 @@ export const BestSeller = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 px-[10em] gap-[4em] mb-[20vh]">
+      <div className=" md:grid-cols-1 grid grid-cols-4 md:justify-center px-[12vw] gap-[4em] mb-[20vh]">
         <ProductCard />
         <ProductCard />
         <ProductCard />
