@@ -20,7 +20,7 @@ export const NavLight = () => {
         </div>
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden flex gap-[16vw] ">
         <div className=" flex items-center text-[2vw] font-bold text-[#252B42] h-[4vw] py-[1vw]  pr-[12vw] tracking-[.00625em] ">
           <h3>Bandage</h3>
 
@@ -45,7 +45,7 @@ export const NavLight = () => {
             </div>
           </div>
         </div>
-        <div className="  flex items-center h-[4vw]">
+        <div className="  flex flex-row items-center h-[4vw]">
           <div className=" flex text-main-blue font-bold text-[1vw] items-center gap-[5vw]">
             <div className="flex gap-[1vw]">
               <i class="fa-regular fa-user"></i>
