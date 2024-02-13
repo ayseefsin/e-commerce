@@ -6,7 +6,7 @@ export const FooterInput = () => {
       </h5>
       <div className="flex">
         <input placeholder="Your e-mail" type="text"></input>
-        <button className="rounded-md text-sm px-12 py-6 bg-[#23A6F0] font-bold text-[#FFF]">
+        <button className="md:px-[5vw] rounded-md text-sm px-12 py-6 bg-[#23A6F0] font-bold text-[#FFF]">
           Subscribe
         </button>
       </div>
