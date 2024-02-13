@@ -1,8 +1,8 @@
 export const ProductCard = () => {
   return (
-    <div>
-      <div className="flex flex-col w-[15vw] md:w-[56vw] ">
-        <div className="flex justify-center aspect-[1/2] drop-shadow-md hover:shadow-xl">
+    <div className="md:items-center md:justify-center ">
+      <div className="flex flex-col w-[15vw] md:w-[50vw] md:items-center md:justify-center ">
+        <div className="flex justify-center aspect-[1/2] md:aspect-[2/3] drop-shadow-md hover:shadow-xl">
           <img
             className="object-cover "
             src="https://www.figma.com/file/tXhNJv706AWM0lXlyxLH9l/image/23057910d190d178c2a7b276e896b9d38b982bf6"
