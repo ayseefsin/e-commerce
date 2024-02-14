@@ -16,7 +16,7 @@ export const NavLight = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/team">Team</Link>
-          <a>Contact</a>
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
 
@@ -41,7 +41,7 @@ export const NavLight = () => {
               <Link to="/team">Team</Link>
             </div>
             <div>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
         </div>

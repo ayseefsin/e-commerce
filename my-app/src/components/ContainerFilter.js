@@ -4,7 +4,7 @@ import { Filter } from "./Filter";
 
 export const ContainerFilter = () => {
   return (
-    <div className="flex justify-between items-center p-[3vw] font-navText ">
+    <div className="flex md:flex-col md:gap-[5vw] md:my-[7vw] justify-between items-center p-[3vw] font-navText ">
       <div>
         <h6 className="text-[#737373] font-bold text-sm">
           Showing all 12 results
@@ -39,7 +39,7 @@ export const ContainerFilter = () => {
           />
         </svg>
       </div>
-      <div >
+      <div>
         <Filter />
       </div>
     </div>
