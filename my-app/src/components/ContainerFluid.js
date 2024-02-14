@@ -1,11 +1,11 @@
 export const ContainerFluid = () => {
   return (
-    <div className="grid grid-cols-2  font-navText gap-[3vw] pb-[15vw] ">
-      <div className="w-[60vw] px-[6vw]">
+    <div className="grid grid-cols-2 md:grid-cols-1 md:items-center font-navText gap-[3vw] pb-[15vw] ">
+      <div className="w-[60vw] md:w-[100vw] px-[6vw]">
         <img src="./pics/asian.png" />
       </div>
 
-      <div className="flex flex-col gap-[3vw] py-[10vw] px-[5vw] ">
+      <div className="flex flex-col gap-[3vw] py-[10vw] px-[5vw] md:items-center ">
         <div className="">
           <h5 className="text-[#BDBDBD] font-bold text-base ">SUMMER 2020</h5>
         </div>
