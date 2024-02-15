@@ -7,18 +7,23 @@ export const AboutPageHeader = () => {
     width: "100%", // Example width
   };
   return (
-    <div style={customStyle} className="flex flex-col p-[12vw] gap-[3vw]">
+    <div className="md:flex-col md:text-center flex items-center justify-center px-[10vw]  ">
       <div className="flex flex-col gap-[3vw]">
-        <h2 className="font-bold text-[#252B42] ">ABOUT COMPANY</h2>
-        <h1 className="text-6xl font-bold text-[#252B42]">ABOUT US</h1>
-        <p className="text-[#737373]">
-          We know how large objects will act, but things on a small scale
-        </p>
+        <div className="flex flex-col gap-[3vw]">
+          <h2 className="font-bold text-[#252B42] ">ABOUT COMPANY</h2>
+          <h1 className="text-[4vw] font-bold text-[#252B42]">ABOUT US</h1>
+          <p className="text-[#737373]">
+            We know how large objects will act, but things on a small scale
+          </p>
+        </div>
+        <div>
+          <button className="bg-[#23A6F0] text-[#ffffff] font-bold px-[2vw] py-[1vw] rounded">
+            Get Quote Now
+          </button>
+        </div>
       </div>
-      <div>
-        <button className="bg-[#23A6F0] text-[#ffffff] font-bold px-[2vw] py-[1vw] rounded">
-          Get Quote Now
-        </button>
+      <div className="items-center justify-center">
+        <img src="/pics/about.design.png" />
       </div>
     </div>
   );

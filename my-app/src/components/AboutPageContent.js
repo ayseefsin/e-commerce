@@ -1,6 +1,6 @@
 export const AboutPageContent = () => {
   return (
-    <div className="flex mx-[14vw] my-[3vw] gap-[2vw] ">
+    <div className="flex md:flex-col mx-[14vw] my-[3vw] gap-[3vw] md:gap-[15vw] md:text-center ">
       <div className="flex flex-1 flex-col gap-[2vw] ">
         <h3 className=" text-[#E74040] ">Problems trying</h3>
         <p className="font-bold text-2xl ">
