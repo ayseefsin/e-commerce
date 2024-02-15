@@ -6,8 +6,8 @@ export const ProductInfo = () => {
         <h6 className="font-bold ">Additional Information</h6>
         <h6 className="font-bold ">Reviews (0)</h6>
       </div>
-      <div className="flex gap-[2vw] ml-[6vw]  ">
-        <div className="flex-1 shadow-sm ">
+      <div className="flex md:flex-col gap-[2vw] ml-[6vw]  ">
+        <div className="flex-1  shadow-sm ">
           <img src="/pics/pembeSandalye.png" />
         </div>
         <div className=" flex-1 flex flex-col gap-[2vw] ">

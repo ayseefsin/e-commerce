@@ -1,6 +1,6 @@
 export const AboutPageWork = () => {
   return (
-    <div className="flex bg-[#2A7CC7] text-[#ffffff] mt-[6vw] ">
+    <div className="flex bg-[#2A7CC7] text-[#ffffff] md:text-center md:py-[10vw] ">
       <div className="flex flex-col gap-[3vw] px-[15vw] pt-[6vw] ">
         <h5 className="font-bold text-lg">WORK WITH US</h5>
         <h2 className="text-[42px] font-bold">Now Let’s grow Yours</h2>
@@ -14,8 +14,8 @@ export const AboutPageWork = () => {
           </button>
         </div>
       </div>
-      <div className="w-[75%]">
-        <img src="/pics/about.png" />
+      <div className="flex  md:hidden w-[100%] h-auto">
+        <img className="w-auto object-cover" src="/pics/about.png" />
       </div>
     </div>
   );

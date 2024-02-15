@@ -2,7 +2,7 @@ export const ProductDetail = () => {
   return (
     <div className="font-navText bg-[#FAFAFA] text-[#252B42]">
       <div>
-        <div className="flex items-center gap-3 tracking-[.0125em] px-[6vw] py-[2vw] ">
+        <div className="flex md:justify-center items-center gap-3 tracking-[.0125em] px-[6vw] py-[2vw] ">
           <a className="font-bold ">Home</a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,22 +34,16 @@ export const ProductDetail = () => {
           <h6 className="text-[#BDBDBD] font-bold">Shop</h6>
         </div>
       </div>
-      <div className="grid grid-cols-2">
-        <div className=" w-[40vw] grid grid-cols-1 grid-rows-2  gap-[1vw] px-[6vw] ">
-          <img
-            className="w-[40vw]"
-            src="https://s3-alpha-sig.figma.com/img/2b79/e11e/d885dbe3ab31e6f0c95ec64b26599246?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jH~HISlKNNTeGYnMrfMYU4FQ7LMGhuQRRWOdjAXRHCb8bEGmEsM6Kez3PdBIW8vcIfxZxKyCXC6FbLDDB5laVoSKTxmcsOoEnyKUiD0Mv-iy3tSZ8HeXtzxNPJUXWIoxqiFKR1GWgKqljot6CLa3Y3svVFsqOpm8mmt6esU4Hpp6XXGkqh7kIp709JSVlFC44~uirB2FOeZn5bgwO~my0go66qPO3rfMh89J-6splaj8L9NzG-WCsbguemj1Hb2e4A5Cqdza~yPulSGz2Q4dtppo-0R4eBqJOjn6HSyYZ6uupvQg7qoCD49w6gGE3ztf-W5NCLk8CvZyPFUgfFM20w__"
-          />
+      <div className="grid grid-cols-2 md:flex md:flex-col">
+        <div className=" w-[40vw] md:w-[100vw] grid grid-cols-1 grid-rows-2  gap-[1vw] px-[6vw] ">
+          <img className="w-[40vw] md:w-[100vw] " src="/pics/teamjean.png" />
           <div className=" grid grid-cols-4 gap-[1vw]  ">
-            <img src="https://s3-alpha-sig.figma.com/img/2b79/e11e/d885dbe3ab31e6f0c95ec64b26599246?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jH~HISlKNNTeGYnMrfMYU4FQ7LMGhuQRRWOdjAXRHCb8bEGmEsM6Kez3PdBIW8vcIfxZxKyCXC6FbLDDB5laVoSKTxmcsOoEnyKUiD0Mv-iy3tSZ8HeXtzxNPJUXWIoxqiFKR1GWgKqljot6CLa3Y3svVFsqOpm8mmt6esU4Hpp6XXGkqh7kIp709JSVlFC44~uirB2FOeZn5bgwO~my0go66qPO3rfMh89J-6splaj8L9NzG-WCsbguemj1Hb2e4A5Cqdza~yPulSGz2Q4dtppo-0R4eBqJOjn6HSyYZ6uupvQg7qoCD49w6gGE3ztf-W5NCLk8CvZyPFUgfFM20w__" />
-            <img
-              className=" opacity-50 "
-              src="https://s3-alpha-sig.figma.com/img/2b79/e11e/d885dbe3ab31e6f0c95ec64b26599246?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jH~HISlKNNTeGYnMrfMYU4FQ7LMGhuQRRWOdjAXRHCb8bEGmEsM6Kez3PdBIW8vcIfxZxKyCXC6FbLDDB5laVoSKTxmcsOoEnyKUiD0Mv-iy3tSZ8HeXtzxNPJUXWIoxqiFKR1GWgKqljot6CLa3Y3svVFsqOpm8mmt6esU4Hpp6XXGkqh7kIp709JSVlFC44~uirB2FOeZn5bgwO~my0go66qPO3rfMh89J-6splaj8L9NzG-WCsbguemj1Hb2e4A5Cqdza~yPulSGz2Q4dtppo-0R4eBqJOjn6HSyYZ6uupvQg7qoCD49w6gGE3ztf-W5NCLk8CvZyPFUgfFM20w__"
-            />
+            <img src="/pics/teamjean.png" />
+            <img className=" opacity-50 " src="/pics/teamjean.png" />
           </div>
         </div>
-        <div>
-          <h3 className="text-[2vw]">Floating Phone</h3>
+        <div className="md:flex md:flex-col md:px-[5vw] md:gap-[10vw]">
+          <h3 className="text-[2vw] md:text-[7vw]">Floating Phone</h3>
           <div className=" flex gap-[0.5vw] mt-[1.5vw] ">
             <img src="/pics/Vector.png" />
             <img src="/pics/Vector.png" />
@@ -63,7 +57,7 @@ export const ProductDetail = () => {
             <p className="text-[#737373] font-bold">Avaibality : </p>
             <p className=" text-main-blue font-bold px-[1vw]"> in Stock</p>
           </div>
-          <p className=" mt-[1.5vw] mb-[1.5vw]">
+          <p className=" mt-[1.5vw] mb-[1.5vw] md:text-center ">
             Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
             RELIT official consequent door ENIM RELIT Mollie. Excitation venial
             consequent sent nostrum met.

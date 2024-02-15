@@ -1,10 +1,10 @@
 export const Trial = () => {
   return (
     <div className="flex flex-col gap-[5vw] mb-[12vw] ">
-      <h2 className="text-5xl font-bold text-center ">
+      <h2 className="text-5xl md:text-[6vw] font-bold text-center ">
         Start your 14 days free trial
       </h2>
-      <p className="text-[#737373] text-center">
+      <p className="text-[#737373] text-center md:text-center">
         Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
         RELIT official consequent.
       </p>

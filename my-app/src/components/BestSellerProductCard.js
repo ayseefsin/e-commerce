@@ -1,6 +1,6 @@
 export const BestSellerProductCard = () => {
   return (
-    <div className="flex flex-col gap-[2vw] rounded shadow-lg hover:shadow-2xl w-[15vw] pb-[2vw] ">
+    <div className="flex flex-col gap-[2vw] rounded shadow-lg hover:shadow-2xl w-[15vw] md:w-[84vw] pb-[2vw] ">
       <img className=" w-[100%] " src="/pics/pembeSandalye.png" />
       <div className="flex flex-col gap-[1vw] mx-[2vw] ">
         <div>
