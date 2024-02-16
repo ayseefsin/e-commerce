@@ -4,7 +4,6 @@ import { AboutPageHeader } from "../components/AboutPageHeader";
 import { AboutPageInfo } from "../components/AboutPageInfo";
 import { AboutPageTeam } from "../components/AboutPageTeam";
 import { AboutPageVideo } from "../components/AboutPageVideo";
-import { AboutPageWork } from "../components/AboutPageWork";
 
 export const AboutPage = () => {
   return (

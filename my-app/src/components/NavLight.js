@@ -49,9 +49,9 @@ export const NavLight = () => {
           <div className=" flex text-main-blue font-bold text-[1vw] items-center gap-[5vw]">
             <div className="flex gap-[1vw]">
               <i class="fa-regular fa-user"></i>
-              <a>Login</a>
+              <Link>Login</Link>
               <p>/</p>
-              <a>Register</a>
+              <Link to="/signup">Register</Link>
             </div>
             <div className="flex text-[1vw] items-center gap-[2vw] ">
               <div className="flex">

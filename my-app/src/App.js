@@ -16,6 +16,7 @@ import { ProductPage } from "./page-components/ProductPage";
 import { AboutPage } from "./page-components/AboutPage";
 import { TeamPage } from "./page-components/TeamPage";
 import { AboutPageWork } from "./components/AboutPageWork";
+import { SignUp } from "./page-components/SingUp";
 
 function App() {
   const fnc = () => {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<AboutPageWork />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Brand />
       <Footer />
