@@ -8,7 +8,7 @@ export const ProductCard = () => {
         <div className="flex justify-center aspect-[1/2] md:aspect-[2/3] drop-shadow-md hover:shadow-xl">
           <Link to="/products/detail">
             <img
-              className="object-cover "
+              className="object-cover w-full h-full"
               src="https://www.figma.com/file/tXhNJv706AWM0lXlyxLH9l/image/23057910d190d178c2a7b276e896b9d38b982bf6"
             />
           </Link>
@@ -18,7 +18,7 @@ export const ProductCard = () => {
             <h5 className="text-[#252B42] text-center ">Graphic Design</h5>
           </div>
           <div className="flex justify-center">
-            <a className="text-[#737373] text-center ">English Department</a>
+            <a className="text-[#737373] text-center">English Department</a>
           </div>
           <div className="flex justify-center gap-[0.375em]">
             <div>
