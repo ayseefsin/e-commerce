@@ -51,7 +51,7 @@ export const Carousel = () => {
       </div>
       <div className="w-[20vw]"></div>
       <div>
-        <div onClick={sliderFnc} className="flex items-center pl-[5vw] ">
+        <div onClick={sliderFnc} className="flex items-center pl-[20vw] ">
           <i
             class="fa-solid fa-chevron-right fa-2xl"
             style={{ color: "#ffffff" }}
