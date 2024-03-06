@@ -1,7 +1,22 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const ProductCard = () => {
+  const [productList, setProductList] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:9292/v1/product")
+      .then((response) => {
+        setProductList(response);
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(console.log("process done"));
+  }, []);
+
   return (
     <div className="md:items-center md:justify-center">
       <div className="flex flex-col w-[15vw] md:w-[50vw] md:items-center md:justify-center ">
@@ -22,7 +37,7 @@ export const ProductCard = () => {
           </div>
           <div className="flex justify-center gap-[0.375em]">
             <div>
-              <h5 className="text-[#BDBDBD] font-bold text-base ">$16.48</h5>
+              <h5 className="text-[#BDBDBD] font-bold text-base ">$16.90</h5>
             </div>
             <div>
               <h5 className="text-[#23856D] font-bold text-base ">$6.48</h5>
