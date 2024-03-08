@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import axios from "axios";
-const axiosInstance = axios.create({
-  baseURL: "https://workintech-fe-ecommerce.onrender.com",
-});
 
 export const SignUp = () => {
   const [roles, setRoles] = useState([]);
+  const [role, setRole] = useState("Müşteri");
   const {
     handleSubmit,
-
     register,
     formState: { errors },
     watch,
@@ -50,65 +47,108 @@ export const SignUp = () => {
     }
   };
 
+  const changeHandler = (event) => {
+    setRole(event.target.value);
+  };
+
   return (
     <form
-      className="text-[2vw] flex flex-col p-[6vw]"
+      className="text-[1.5rem] flex flex-col p-[6vw] mx-[6vw] border-2 border-[#2A7CC7] shadow-lg font-navText text-[#252B42]"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <label>Name</label>
-      <input
-        {...register("name", {
-          required: "Name is required",
-          minLength: {
-            value: 3,
-            message: "Name must be at least 3 characters",
-          },
-        })}
-      />
-      {errors.name && <p>{errors.name.message}</p>}
+      <div className="flex flex-col">
+        <label className="w-[100vw]">
+          Name:
+          <input
+            className="w-[50vw]"
+            {...register("name", {
+              required: "Name is required",
+              minLength: {
+                value: 3,
+                message: "Name must be at least 3 characters",
+              },
+            })}
+          />
+        </label>
 
-      <label>Email</label>
-      <input
-        {...register("email", {
-          required: "Email is required",
-          pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" },
-        })}
-      />
-      {errors.email && <p>{errors.email.message}</p>}
+        {errors.name && (
+          <p className="text-[red] text-[1.25rem]">{errors.name.message}</p>
+        )}
 
-      <label>Password</label>
-      <input
-        type="password"
-        {...register("password", {
-          required: "Password is required",
-          minLength: {
-            value: 8,
-            message: "Password must be at least 8 characters",
-          },
-        })}
-      />
-      {errors.password && <p>{errors.password.message}</p>}
+        <label>
+          Email:
+          <input
+            className="w-[50vw]"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Invalid email address",
+              },
+            })}
+          />
+        </label>
 
-      <label>Confirm Password</label>
-      <input
-        type="password"
-        {...register("confirmPassword", {
-          validate: (value) =>
-            value === watch("password") || "Passwords do not match",
-        })}
-      />
-      {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
+        {errors.email && (
+          <p className="text-[red] text-[1.25rem] ">{errors.email.message}</p>
+        )}
 
-      <label>Role</label>
-      <select aria-placeholder="Müşteri" {...register("role_id")}>
-        {roles.map((role) => (
-          <option key={role.id} value={role.id}>
-            {role.name}
-          </option>
-        ))}
-      </select>
+        <label>
+          Password:
+          <input
+            className="w-[50vw]"
+            type="password"
+            {...register("password", {
+              required: "Password is required",
+              minLength: {
+                value: 8,
+                message: "Password must be at least 8 characters",
+              },
+            })}
+          />
+        </label>
 
-      <button type="submit">Submit</button>
+        {errors.password && (
+          <p className="text-[red] text-[1.25rem]">{errors.password.message}</p>
+        )}
+
+        <label>
+          Confirm Password:
+          <input
+            className="w-[50vw]"
+            type="password"
+            {...register("confirmPassword", {
+              validate: (value) =>
+                value === watch("password") || "Passwords do not match",
+            })}
+          />
+        </label>
+
+        {errors.confirmPassword && (
+          <p className="text-[red] text-[1.25rem]">
+            {errors.confirmPassword.message}
+          </p>
+        )}
+
+        <label>
+          Role:
+          <select {...register("role_id")}>
+            {roles.map((r) => (
+              <option key={r.id} value={r.id} onChange={changeHandler}>
+                {r.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div className="flex items-center">
+          <button
+            className="bg-main-blue w-[25vw] text-[white] font-bold rounded border-2 border-[#2A7CC7] shadow-lg py-[2vw] m-[2vw] align-middle "
+            type="submit "
+          >
+            Submit
+          </button>
+        </div>
+      </div>
     </form>
   );
 };

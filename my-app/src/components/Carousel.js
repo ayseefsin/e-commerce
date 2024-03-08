@@ -2,15 +2,15 @@ import { useState } from "react";
 export const Carousel = () => {
   const slides = [
     {
-      url: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA18kVdH.img",
+      url: "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-04/woman%20shopping.jpg",
       name: "women",
     },
     {
-      url: "https://wallpapercave.com/wp/wp1866317.jpg",
+      url: "https://peaseandcurren.com/wp-content/uploads/2020/03/Retail-and-online-shopping-1536x1024.jpg",
       name: "women",
     },
   ];
-  const [slide, setSlide] = useState(0);
+  const [slide, setSlide] = useState(1);
   const sliderFnc = () => {
     slide === 1 ? setSlide(0) : setSlide(1);
   };
