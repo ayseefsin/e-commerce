@@ -9,10 +9,19 @@ export const SignUp = () => {
   const {
     handleSubmit,
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     watch,
     reset,
-  } = useForm();
+  } = useForm({
+    mode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+      role: null,
+    },
+  });
   const watchedRole = watch("role");
   useEffect(() => {
     const fetchRoles = async () => {
