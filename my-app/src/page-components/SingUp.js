@@ -42,7 +42,7 @@ export const SignUp = () => {
     try {
       // Show spinner and disable submit button
       // You can use a loading state to show a spinner
-
+      console.log(data);
       const response = await axios.post(
         "https://workintech-fe-ecommerce.onrender.com/signup",
         data
@@ -55,10 +55,6 @@ export const SignUp = () => {
       // Show error message to the user
       // You can use a state to store error message and display it in the form
     }
-  };
-
-  const changeHandler = (event) => {
-    setRole(event.target.value);
   };
 
   return (
@@ -148,7 +144,7 @@ export const SignUp = () => {
 
         <label>
           Role:
-          <select {...register("role")} onChange={changeHandler}>
+          <select {...register("role")}>
             {roles.map((r) => (
               <option key={r.id} value={r.id}>
                 {r.name}
@@ -156,7 +152,7 @@ export const SignUp = () => {
             ))}
           </select>
         </label>
-        {watchedRole === 2 && (
+        {watchedRole == 2 && (
           <>
             <label>
               Store Name:
