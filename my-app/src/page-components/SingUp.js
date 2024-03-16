@@ -79,9 +79,9 @@ export const SignUp = () => {
       className="text-[1.5rem] flex flex-col p-[6vw] mx-[6vw] border-2 border-[#2A7CC7] shadow-lg font-navText text-[#252B42]"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="flex flex-col">
-        <label className="w-[100vw]">
-          Name:
+      <div className="flex flex-col px-[5vw] ">
+        <div className="flex justify-between">
+          <label className="w-[100vw]">Name: </label>
           <input
             className="w-[50vw]"
             {...register("name", {
@@ -92,14 +92,13 @@ export const SignUp = () => {
               },
             })}
           />
-        </label>
+        </div>
 
         {errors.name && (
           <p className="text-[red] text-[1rem]">{errors.name.message}</p>
         )}
-
-        <label>
-          Email:
+        <div className="flex justify-between">
+          <label>Email: </label>
           <input
             className="w-[50vw]"
             {...register("email", {
@@ -110,14 +109,13 @@ export const SignUp = () => {
               },
             })}
           />
-        </label>
+        </div>
 
         {errors.email && (
           <p className="text-[red] text-[1rem] ">{errors.email.message}</p>
         )}
-
-        <label>
-          Password:
+        <div className="flex justify-between">
+          <label>Password: </label>
           <input
             className="w-[50vw]"
             type="password"
@@ -135,14 +133,13 @@ export const SignUp = () => {
               },
             })}
           />
-        </label>
+        </div>
 
         {errors.password && (
           <p className="text-[red] text-[1rem]">{errors.password.message}</p>
         )}
-
-        <label>
-          Confirm Password:
+        <div className="flex justify-between">
+          <label>Confirm Password: </label>
           <input
             type="password"
             {...register("confirmPassword", {
@@ -150,16 +147,14 @@ export const SignUp = () => {
                 value === watch("password") || "Passwords do not match",
             })}
           />
-        </label>
-
+        </div>
         {errors.confirmPassword && (
           <p className="text-[red] text-[1rem]">
             {errors.confirmPassword.message}
           </p>
         )}
-
-        <label>
-          Role:
+        <div className="flex justify-between">
+          <label>Role: </label>
           <select {...register("role_id")}>
             {roles.map((r) => (
               <option key={r.id} value={r.id}>
@@ -167,57 +162,57 @@ export const SignUp = () => {
               </option>
             ))}
           </select>
-        </label>
+        </div>
         {watchedRole == 2 && (
           <div className="text-[1.25rem] ml-[2rem] flex flex-col ">
-            <label>
-              Store Name:
+            <div className="flex justify-between">
+              <label>Store Name: </label>
               <input
                 {...register("store.name", { required: true, minLength: 3 })}
               />
-              {errors.store_name && (
-                <span className="text-[red] text-[1rem]">
-                  This field is required and must be at least 3 characters
-                </span>
-              )}
-            </label>
-            <label>
-              Store Phone:
+            </div>
+            {errors.store_name && (
+              <span className="text-[red] text-[1rem]">
+                This field is required and must be at least 3 characters
+              </span>
+            )}
+            <div className="flex justify-between">
+              <label>Store Phone:</label>
               <input
                 {...register("store.phone", {
                   required: true,
                   pattern: /^[0-9]{10}$/,
                 })}
               />
-              {errors.store_phone && (
-                <span className="text-[red] text-[1rem]">
-                  Invalid phone number
-                </span>
-              )}
-            </label>
-            <label>
-              Store Tax ID:
+            </div>
+            {errors.store_phone && (
+              <span className="text-[red] text-[1rem]">
+                Invalid phone number
+              </span>
+            )}
+            <div className="flex justify-between">
+              <label>Store Tax ID: </label>
               <input
                 {...register("store.tax_no", {
                   required: true,
                   pattern: /^T\d{4}V\d{6}$/,
                 })}
               />
-              {errors.store_tax_id && (
-                <span className="text-[red] text-[1rem]">
-                  Invalid tax ID (format: TXXXXVXXXXXX)
-                </span>
-              )}
-            </label>
-            <label>
-              Store Bank Account:
+            </div>
+            {errors.store_tax_id && (
+              <span className="text-[red] text-[1rem]">
+                Invalid tax ID (format: TXXXXVXXXXXX)
+              </span>
+            )}
+            <div className="flex justify-between">
+              <label>Store Bank Account: </label>
               <input {...register("store.bank_account", { required: true })} />
-              {errors.store_bank_account && (
-                <span className="text-[red] text-[1rem]">
-                  This field is required
-                </span>
-              )}
-            </label>
+            </div>
+            {errors.store_bank_account && (
+              <span className="text-[red] text-[1rem]">
+                This field is required
+              </span>
+            )}
           </div>
         )}
         <div className="flex items-center">
