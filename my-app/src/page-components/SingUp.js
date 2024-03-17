@@ -79,11 +79,11 @@ export const SignUp = () => {
       className="text-[1.5rem] flex flex-col p-[6vw] mx-[6vw] border-2 border-[#2A7CC7] shadow-lg font-navText text-[#252B42]"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="flex flex-col px-[5vw] ">
-        <div className="flex justify-between">
-          <label className="w-[100vw]">Name: </label>
+      <div className="flex flex-col px-[8vw] gap-[1vw] ">
+        <div className="flex justify-between ">
+          <label>Name: </label>
           <input
-            className="w-[50vw]"
+            className="w-[40rem] border-2 border-[#2A7CC7] rounded "
             {...register("name", {
               required: "Name is required",
               minLength: {
@@ -100,7 +100,7 @@ export const SignUp = () => {
         <div className="flex justify-between">
           <label>Email: </label>
           <input
-            className="w-[50vw]"
+            className="w-[40rem] border-2 border-[#2A7CC7] rounded "
             {...register("email", {
               required: "Email is required",
               pattern: {
@@ -117,7 +117,7 @@ export const SignUp = () => {
         <div className="flex justify-between">
           <label>Password: </label>
           <input
-            className="w-[50vw]"
+            className="w-[40rem] border-2 border-[#2A7CC7] rounded "
             type="password"
             {...register("password", {
               required: "Password is required",
@@ -141,6 +141,7 @@ export const SignUp = () => {
         <div className="flex justify-between">
           <label>Confirm Password: </label>
           <input
+            className="w-[40rem] border-2 border-[#2A7CC7] rounded "
             type="password"
             {...register("confirmPassword", {
               validate: (value) =>
@@ -153,9 +154,12 @@ export const SignUp = () => {
             {errors.confirmPassword.message}
           </p>
         )}
-        <div className="flex justify-between">
+        <div className="flex gap-[13.5vw] ">
           <label>Role: </label>
-          <select {...register("role_id")}>
+          <select
+            className="border-2 border-[#2A7CC7] rounded"
+            {...register("role_id")}
+          >
             {roles.map((r) => (
               <option key={r.id} value={r.id}>
                 {r.name}
@@ -164,10 +168,11 @@ export const SignUp = () => {
           </select>
         </div>
         {watchedRole == 2 && (
-          <div className="text-[1.25rem] ml-[2rem] flex flex-col ">
+          <div className="text-[1.25rem] ml-[2rem] flex flex-col gap-[1vw] ">
             <div className="flex justify-between">
               <label>Store Name: </label>
               <input
+                className="w-[42vw] border-2 border-[#2A7CC7] rounded"
                 {...register("store.name", { required: true, minLength: 3 })}
               />
             </div>
@@ -179,6 +184,7 @@ export const SignUp = () => {
             <div className="flex justify-between">
               <label>Store Phone:</label>
               <input
+                className="w-[42vw] border-2 border-[#2A7CC7] rounded"
                 {...register("store.phone", {
                   required: true,
                   pattern: /^[0-9]{10}$/,
@@ -193,6 +199,7 @@ export const SignUp = () => {
             <div className="flex justify-between">
               <label>Store Tax ID: </label>
               <input
+                className="w-[42vw] border-2 border-[#2A7CC7] rounded"
                 {...register("store.tax_no", {
                   required: true,
                   pattern: /^T\d{4}V\d{6}$/,
@@ -206,7 +213,10 @@ export const SignUp = () => {
             )}
             <div className="flex justify-between">
               <label>Store Bank Account: </label>
-              <input {...register("store.bank_account", { required: true })} />
+              <input
+                className="w-[42vw] border-2 border-[#2A7CC7] rounded"
+                {...register("store.bank_account", { required: true })}
+              />
             </div>
             {errors.store_bank_account && (
               <span className="text-[red] text-[1rem]">
