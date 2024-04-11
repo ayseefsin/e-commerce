@@ -13,8 +13,8 @@ const rootReducer = combineReducers({
   userReducer,
   productReducer,
 });
-const middleware = [thunk, logger];
+// const middleware = [thunk];
 
-const store = createStore(rootReducer, applyMiddleware(...middleware));
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
