@@ -8,6 +8,7 @@ import globalReducer from "../reducers/globalReducer";
 import userReducer from "../reducers/userReducer";
 import productReducer from "../reducers/productReducer";
 import { thunk } from "redux-thunk";
+import logger from "redux-logger";
 const rootReducer = combineReducers({
   globalReducer,
   userReducer,
@@ -15,6 +16,6 @@ const rootReducer = combineReducers({
 });
 // const middleware = [thunk];
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 export default store;
